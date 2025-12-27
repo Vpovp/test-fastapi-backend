@@ -10,7 +10,7 @@ def home():
 
 @app.get('/health')
 def health():
-    return{"status":'ok'}
+    return{"status":'ok','version':1}
 
 if __name__=='__main__':
     port=int(os.getenv("PORT",8080))
